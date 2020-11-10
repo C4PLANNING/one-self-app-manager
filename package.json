@@ -1,0 +1,65 @@
+{
+  "name": "oneselfplus",
+  "version": "1.0.0",
+  "description": "My super-excellent Nuxt.js project",
+  "author": "tana",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/proxy": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "core-js": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "element-ui": "2.7.2",
+    "express": "^4.17.1",
+    "firebase": "^7.15.1",
+    "firebase-admin": "^8.12.1",
+    "http-status-codes": "^1.4.0",
+    "moment": "^2.26.0",
+    "nuxt": "^2.0.0",
+    "ts-node": "^8.10.2",
+    "vue-property-decorator": "^8.4.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxt/typescript-build": "^1.0.3",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "lodash.clonedeep": "^4.5.0",
+    "nodemon": "^1.18.9"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "ie": 11
+              },
+              "useBuiltIns": "usage",
+              "corejs": 2.69
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
